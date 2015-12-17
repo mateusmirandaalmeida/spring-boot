@@ -153,5 +153,7 @@ sftp-config.json
 .vagrant/
 
 
+spring-backend/target/
+
 ### JRebel
 rebel.xml

@@ -10,5 +10,6 @@
     </properties>
   <modules>
     <module>spring-backend</module>
+    <module>spring-frontend</module>
   </modules>
 </project>
