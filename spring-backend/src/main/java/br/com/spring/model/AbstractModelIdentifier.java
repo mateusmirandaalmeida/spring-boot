@@ -1,6 +1,7 @@
 package br.com.spring.model;
 
 import java.io.Serializable;
+import javax.persistence.Basic;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -12,9 +13,12 @@ import javax.persistence.MappedSuperclass;
  */
 @MappedSuperclass
 public class AbstractModelIdentifier implements Serializable {
-    
+    /**
+     *
+     */
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Basic(optional = false)
     public Long id;
 
     public Long getId() {
